@@ -1,5 +1,4 @@
 html {
-    margin: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -43,16 +42,42 @@ html {
     background-color: lightgray;
     z-index: 1;
     align-items: center;
+    justify-content: space-around;
 }
 
 .banner-image img {
-    top: 64px;
-    width: 60% auto;
-    left: 24px;
+    width: 60%;
+    padding-left: 24px;
 }
 
 .learn {
     padding-left: 24px;
 }
 
+.learn h5 {
+    color: white;
+    background-color: darkgray;
+    text-align: center;
+    padding: 8px;
+}
 
+/*middle section*/
+
+.middle-section {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.figure img {
+    width: 60%;
+}
+
+.figure quote {
+    font-weight: 300;
+}
+
+.information-grid {
+    display: inline-flex;
+}
