@@ -122,6 +122,11 @@ html {
     font-size: 13px;
 }
 
+a {
+    text-decoration: none;
+    font-size: 11px;
+}
+
 .information-grid {
     display: flex;
     justify-content: center;
@@ -141,9 +146,57 @@ html {
     justify-content: space-around;
     align-items: center;
     padding: 16px;
+    border: 1px solid lightgray;
+}
+
+.guest-lecture {
+    background-color: lightgray;
 }
 
 .complement p {
-    font-weight: 300;
-    font-size: 9px;
+    font-size: 12px;
+}
+
+/*Start Learning section*/
+
+.learning {
+    width: 100%;
+    background-color: lightgray;
+}
+
+
+.three-row {
+    align-items: center;
+    justify-content: center;
+    padding-left: 72px;
+    padding-right: 72px;
+    width: auto;
+}
+
+.learning-image {
+    height: auto;
+}
+
+/*FIRST ROW*/
+
+.grid-row-one {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+/*SECOND ROW*/
+
+.three-row-2 {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.data-text, 
+.business-text, 
+.marketing-text,
+.design-text,
+.ca-art,
+.se {
+    background-color: white;
+    padding: 16px 40px 24px 16px;
 }
