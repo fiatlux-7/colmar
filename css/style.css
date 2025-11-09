@@ -1,5 +1,6 @@
 html {
     font-family: Montserrat;
+    font-size: 16px;
 }
 
 /*header*/
@@ -45,9 +46,6 @@ html {
 .body {
     position: relative;
     top: 64px;
-    left: 0;
-    right: 0;
-    width: 100%;
 }
 
 
@@ -59,94 +57,102 @@ html {
     background-color: lightgray;
     z-index: 1;
     align-items: center;
-    justify-content: space-around;
+}
+
+.banner-image {
+    flex: 1 1 60%;
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
 }
 
 .banner-image img {
-    position: relative;
-    width: 60%;
-    padding-left: 24px;
-    top: 32px;
-    padding-bottom: 32px;
+    max-width: 100%;
+    height: auto;
 }
 
 
 .learn {
-    padding-left: 24px;
+    margin: 24px;
+    padding: 24px;
+    flex: 1 1 40%;
 }
 
 .learn h5 {
     color: white;
     background-color: darkgray;
     text-align: center;
-    padding: 8px;
+    padding: 15px 8px;
 }
 
-/*middle section*/
+/*middle section, it doesn't hurt to keep learning*/
 
 .middle-section {
-    display: flex;
+    display: inline-flex;
     background-color: white;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    width: 100%;
 }
 
 .figure {
-    max-width: 60%;
-    padding-left: 24px;
+    flex: 1 1 60%;
+    height: auto;
+    padding: 24px;
 }
 
 .figure img {
     max-width: 100%;
-    object-fit: cover;
-    padding: 0;
-    margin: 0;
+    height: auto;
 }
 
-.figure h2 {
-    text-align: center;
-}
-
-.strategist {
+.strategist p {
     font-weight: 300;
-    font-size: 12px;
-    padding: 24px;
-}
-
-.learning-text {
+    font-size: 0.75rem;
 }
 
 .emanuel {
     font-weight: 300;
-    font-size: 13px;
+    font-size: 0.82rem;
 }
 
 a {
     text-decoration: none;
-    font-size: 11px;
+    font-size: 0.75rem;
 }
 
 .information-grid {
+    flex: 1 1 40%; 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
-    padding: 32px 24px;
 }
 
-.information-grid img {
-    max-width: 35%;
-    height: auto;
-    padding-right: 16px;
-}
 
-.orientation, .our-campus, .guest-lecture {
+.orientation, 
+.our-campus, 
+.guest-lecture {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 16px;
+    align-items: center;
     border: 1px solid lightgray;
+}
+
+.orientation img, 
+.our-campus img, 
+.guest-lecture img {
+    flex: 1 1 35%;
+    max-width: 200px;
+    min-width: 0px;
+    height: auto;
+}
+
+.orientation-text,
+.campus-text,
+.guest-lecturetext {
+    flex: 1 1 65%;
+    align-items: center;
 }
 
 .guest-lecture {
@@ -154,14 +160,15 @@ a {
 }
 
 .complement p {
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
-/*Start Learning section*/
+/*Start Learning section - entire*/
 
 .learning {
-    width: 100%;
     background-color: lightgray;
+    display: inline-flex;
+    justify-content: center;
 }
 
 
@@ -170,11 +177,29 @@ a {
     justify-content: center;
     padding-left: 72px;
     padding-right: 72px;
-    width: auto;
 }
 
-.learning-image {
+.learning-image img {
+    max-width: 100%;
     height: auto;
+}
+
+.software-engineering, 
+.computer-art,
+.design,
+.data-course,
+.business-course,
+.marketing-course {
+    padding-right: 32px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/*HEADER*/
+
+.learning-header {
+    text-align: center;
+    padding: 32px;
 }
 
 /*FIRST ROW*/
@@ -182,6 +207,7 @@ a {
 .grid-row-one {
     display: inline-flex;
     justify-content: space-around;
+    padding: 32px 72px 24px 72px;
 }
 
 /*SECOND ROW*/
@@ -199,4 +225,69 @@ a {
 .se {
     background-color: white;
     padding: 16px 40px 24px 16px;
+    height: auto;
+    justify-content: space-between;
+}
+
+/*Thesis exhibit*/
+
+.thesis-sections {
+    display: inline-flex;
+    background-color: white;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: auto;
+}
+
+.thesis h2 {
+    padding: 32px;
+    text-align: center;
+    width: 100%;
+}
+
+/*video*/
+.video {
+    flex-basis: 60%;
+    height: auto;
+    padding: 24px;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/*on the side of the video*/
+.thesis-buttons {
+    flex-basis: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fisma {
+    background-color: lightgray;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fisma img, 
+.now-n-then img {
+    padding: 16px;
+    height: auto;
+}
+
+.fisma-img {
+    flex-basis: 35%;
+    height: auto;
+}
+
+.fisma-text {
+    flex-basis: 65%;
+}
+
+.now-n-then {
+    background-color: white;
 }
